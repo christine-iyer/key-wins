@@ -1,18 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato:100&effect=neon');
 
 /* (https://media.istockphoto.com/vectors/cannabis-vector-id483151619?b=1&k=20&m=483151619&s=170667a&w=0&h=2LNN6cy4NvfwmassnzQA8e8N1iMWt2_SxR_hJ3kg7XA= */
 body {
   margin: 0;
-  font-family: 'Righteous', cursive;
+  font-family: 'Crimson', sans-serif;
   background-color: antiquewhite;
   background-size: cover;
 
 }
 
+.index {
+  font-family: 'Crimson', cursive;
+  font-size: 19px;
+  /* Lined background */
+  background-image: linear-gradient(#d1d5db 1px, transparent 0px);
+  background-size: 100% 1.5em;
+
+  /*
+  Display the content on top of the lines.
+  The line height must be the same as the background size defined above
+  */
+  background-position-y: 1.5rem
+}
 
 
 h1 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Crimson', sans-serif;
   background: rgb(216, 108, 89);
   text-shadow: 1px 1px 1px rgb(225, 60, 60);
   margin:0;
@@ -27,11 +40,10 @@ a {
   text-decoration: none;
   text-shadow: 1px 1px 1px rgb(212, 164, 150);
   font-size: 1.5em;
-  background: rgba(182, 186, 187, .2);
-}
+  background: rgb(23, 48, 136);
 
 a:hover {
-  color: rgb(182, 183, 121);
+  color: rgb(23, 48, 136);
 }
 
 li {
@@ -60,4 +72,10 @@ input[type=submit] {
 }
 p {
   color: aliceblue;
+}
+.show {background-color: 'red';
+
+}
+.title {
+ font: url('https://fonts.googleapis.com/css?family=Lato:100&effect=neon')
 }

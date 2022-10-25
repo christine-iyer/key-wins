@@ -42,6 +42,11 @@ const dataController = {
      },
      //Create
      create(req,res,next){
+          req.body.firstWin = req.body.firstWin === 'on'
+          req.body.longTerm = req.body.longTerm === 'on'
+          req.body.satisfaction = req.body.satisfaction === 'on'
+          req.body.challenge = req.body.challenge === 'on'
+          req.body.gratitude = req.body.gratitude === 'on'
           req.body.Date = new Date()
           Win.create(req.body, (err, createdWin) => {
                if (err) {

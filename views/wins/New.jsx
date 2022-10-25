@@ -4,19 +4,22 @@ const Default = require('../layouts/Default.jsx')
 class New extends React.Component {
     render(){
         return (
-            <Default title="Create A New Log Entry">
+            <Default title="Share Your Key-Win with Us">
+ 
+
             <form method="POST" action="/wins">
-                field1: <input type="text" name="field1" placeholder='field1'></input><br/>
-                field2: <input type="text" name="field2" placeholder='field2'></input><br/>
-                field3: <input type="number" name="field3"></input><br/>
-                field4: <input type="text" name="field4" placeholder='field4'></input><br/>
-                field5: <input type="text" name="field5" placeholder='Type'></input><br/>
-                field6: <input type="text" name="field6"></input><br/>
-                field7: <input type="text" name="field7"></input><br />
+                success: <input type="text" name="success" placeholder='success'></input><br/>
+                satisfaction: <input type="checkbox" name="satisfaction" placeholder='satisfaction'></input><br/>
+                challenge: <input type="checkbox" name="challenge"></input><br/>
+                firstWin: <input type='checkbox' name='firstWin' /><br />
+                longTerm: <input type='checkbox' name='longTerm' /><br />
+                gratitude: <input type="checkbox" name="gratitude"></input><br/>
+                comments: <input type="text" name="comments"></input><br />
                 Date: <input type="date" name="Date"></input><br /> 
-                <input type="submit" value="Submit Strain"></input>
+                <input type="submit" value="Submit your Key-Win"></input>
             </form>
             </Default>
+
         )
     }
 }
