@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 //Make a Schema
 const winSchema = new mongoose.Schema({
      success: { type: String, required: true }, 
-     gratitude: Boolean, 
      satisfaction: Boolean, 
      challenge: Boolean, 
      firstWin: Boolean,      

@@ -20,13 +20,15 @@ body {
   Display the content on top of the lines.
   The line height must be the same as the background size defined above
   */
-  background-position-y: 1.5rem
+  background-position-y: 1.5rem;
 }
 
 
 h1 {
   font-family: 'Crimson', sans-serif;
-  background: rgb(216, 108, 89);
+  background:  antiquewhite;
+  border-color: darkred;
+  border-style: double;
   text-shadow: 1px 1px 1px rgb(225, 60, 60);
   margin:0;
   margin-bottom: .5em;
@@ -48,6 +50,9 @@ a:hover {
 
 li {
   list-style: none;
+}
+ul.a {
+  list-style-type: circle;
 }
 
 li a {

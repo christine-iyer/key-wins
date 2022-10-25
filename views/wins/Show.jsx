@@ -9,14 +9,16 @@ const Default = require('../layouts/Default.jsx');
 class Show extends React.Component {
    
     render(){
-        const {success, satisfaction,challenge, firstWin, _id,longTerm, gratitude }= this.props.win
+        const {success, satisfaction,challenge, firstWin, _id,longTerm, gratitude, comments }= this.props.win
 
   
     
         return(<div className='show'>
 
-        <Default title={`${success} Show Page`} win={this.props.win}>
-            <p>I just had a victory. I {success}. (last edited ({new Date().toString()}))
+        <Default title={` Certificate of Congratulations`} win={this.props.win}>
+            <h2>Bring it!</h2>
+            <h3>On {new Date().toString()}</h3> 
+            <p> I {success}.
             {firstWin ? ' This is a huge success for me. A first. ' : ' It\'s not my first win here. But man, it sure feels good. '}
             {longTerm ? ' I\'ve been working towards this for ages; and it\'s sometimes been a struggle. ' : 'I must confess it was a relative quick win, but we count those. '}
             {satisfaction ? 'Am I satisfied? Are you kidding, I am so freaking proud. And yeah, I feel great. ' :  'How satisfied do I feel? Meh, no big deal.  '}

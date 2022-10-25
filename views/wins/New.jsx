@@ -14,8 +14,9 @@ class New extends React.Component {
                 firstWin: <input type='checkbox' name='firstWin' /><br />
                 longTerm: <input type='checkbox' name='longTerm' /><br />
                 gratitude: <input type="checkbox" name="gratitude"></input><br/>
+                <h3>In reflecting on this key-win, do you have any words to express what this could unlock for you? </h3>
                 comments: <input type="text" name="comments"></input><br />
-                Date: <input type="date" name="Date"></input><br /> 
+                {/* Date: <input type="date" name="Date"></input><br />  */}
                 <input type="submit" value="Submit your Key-Win"></input>
             </form>
             </Default>

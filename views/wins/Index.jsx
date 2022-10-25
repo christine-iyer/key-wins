@@ -40,8 +40,11 @@ class Index extends React.Component{
                                         gratitude
                                         ? 'I could never have done this alone and I want to thank each and every one of you. You know who you are! I love you. ' :  'Does anyone besides me deserve credit for this win ? Not today, went rogue and killed it alone! '
                                      }
-                                       Should I delete this victory, even though it made me feel {satisfaction
-                                        ? ' super satisfied ' :  ' pleased '} on {Date}??? 
+                                       Should I delete this victory, even though it made me feel 
+                                       {
+                                       satisfaction
+                                        ? ' super satisfied ' :  ' pleased '
+                                        } on {Date}??? 
                                         </p>
 
                              
