@@ -8,7 +8,7 @@ class New extends React.Component {
  
 
             <form method="POST" action="/wins">
-                success: <input type="text" name="success" placeholder='success'></input><br/>
+                Success: <input type="text" name="success" placeholder='use as few or as many words as you like to share your victory' className='success-box'></input><br/>
                 satisfaction: <input type="checkbox" name="satisfaction" placeholder='satisfaction'></input><br/>
                 challenge: <input type="checkbox" name="challenge"></input><br/>
                 firstWin: <input type='checkbox' name='firstWin' /><br />

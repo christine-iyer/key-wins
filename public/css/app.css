@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100&effect=neon');
+@import url('https://fonts.googleapis.com/css?family=Atma');
 
+nav {
+  font-size: 12px;
+  word-spacing: 1em;
+}
 /* (https://media.istockphoto.com/vectors/cannabis-vector-id483151619?b=1&k=20&m=483151619&s=170667a&w=0&h=2LNN6cy4NvfwmassnzQA8e8N1iMWt2_SxR_hJ3kg7XA= */
 body {
   margin: 0;
@@ -10,12 +15,13 @@ body {
 }
 
 .index {
-  font-family: 'Crimson', cursive;
+  /* font-family: 'Crimson', cursive; */
   font-size: 19px;
   /* Lined background */
   background-image: linear-gradient(#d1d5db 1px, transparent 0px);
   background-size: 100% 1.5em;
 
+  font-family: 'Atma';
   /*
   Display the content on top of the lines.
   The line height must be the same as the background size defined above
@@ -24,10 +30,29 @@ body {
 }
 
 
+	.show {
+
+    font-family: 'Atma';
+    font-size: 19px;
+    /* Lined background */
+    background-image: linear-gradient(#b3c3da 1px, transparent 20px);
+    background-size: 100% 1.5em;
+    background-position-y: 6.5rem;
+ 
+  }
+
+
+
+
+
+h2{
+  text-align: center;
+
+}
 h1 {
   font-family: 'Crimson', sans-serif;
   background:  antiquewhite;
-  border-color: darkred;
+  /* border-color: darkred; */
   border-style: double;
   text-shadow: 1px 1px 1px rgb(225, 60, 60);
   margin:0;
@@ -42,21 +67,22 @@ a {
   text-decoration: none;
   text-shadow: 1px 1px 1px rgb(212, 164, 150);
   font-size: 1.5em;
-  background: rgb(23, 48, 136);
+  margin-left: -1em;
+  /* background: rgb(23, 48, 136); */
+}
 
 a:hover {
-  color: rgb(23, 48, 136);
+    color:  rgb(212, 164, 150);
 }
 
 li {
   list-style: none;
-}
-ul.a {
-  list-style-type: circle;
+  color: rgb(212, 164, 150);
+
 }
 
 li a {
-  color: whitesmoke;
+  color: violet;
 }
 
 input[type=text] {
@@ -66,21 +92,21 @@ input[type=text] {
 
 input[type=submit] {
   padding: .3em;
-  color: brown;
-  background: rgb(212, 164, 150);
+  color: #4CAF50;
+  background: none;
   font-size: 1em;
   border-radius: 10%;
   border: none;
+  border: 2px solid #4CAF50;
   
   
 
 }
 p {
-  color: aliceblue;
+  color: rgb(173, 6, 6);
+ font: url('');
 }
-.show {background-color: 'red';
 
-}
 .title {
  font: url('https://fonts.googleapis.com/css?family=Lato:100&effect=neon')
 }

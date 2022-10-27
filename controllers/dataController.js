@@ -29,6 +29,12 @@ const dataController = {
      },
      //Update
      update(req, res,next) {
+          req.body.firstWin = req.body.firstWin === 'on'
+          req.body.longTerm = req.body.longTerm === 'on'
+          req.body.satisfaction = req.body.satisfaction === 'on'
+          req.body.challenge = req.body.challenge === 'on'
+          req.body.gratitude = req.body.gratitude === 'on'
+
           Win.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedWin) => {
                if (err){
                     res.status(400).send({

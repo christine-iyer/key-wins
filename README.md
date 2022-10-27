@@ -25,6 +25,8 @@ app.get('/magic/:str', (req,res) => {
   let randomItem = arr[Math.floor(Math.random()*arr.length)];
   res.send(`<h1>${randomItem}</h1>`)
 })      
+
+const bingo = ['Bingo', 'Nailed it!', 'Homerun', 'Damn Girl']
  ```
 
 
@@ -40,3 +42,4 @@ app.get('/magic/:str', (req,res) => {
 |challengeMeh|I\'ve done much harder things.  But I don\'t take it for granted  that most things come easy. '                                  |As I like to say, sweat today so you dont  regret today.                                |TBA                                                           |TBA                                                                                                                                 |TBA                               |TBA                 |TBA            |
 |gratitudeYes|I could never have done  this alone and I want to thank  each and every one of you. You  know who you are! I love you. '         |Thanks for having my back;  you know who you are.                                       |I have to give credit  where  it’s due. You  know who you are.|I could never overlook those whose shoulders on which  I stood. This our our win.                                                   |I sincerely applaud  all of you.  |It takes a village. |TBA            |
 |gratitudeMeh|Does anyone besides me  deserve credit for this win?  Not today, went rogue  and killed it alone! '                              |Though I stand alone in recognition,  I appreciate so many well wishers.                |TBA                                                           |TBA                                                                                                                                 |TBA                               |TBA                 |TBA            |
+
