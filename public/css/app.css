@@ -3,7 +3,18 @@
 
 nav {
   font-size: 12px;
-  word-spacing: 1em;
+  word-spacing: .1em;
+  list-style-image: url('starsolid.gif');
+  margin: 5%;
+  padding: 0; 
+}
+.nav a {
+  display: block;
+  width: 120px;
+
+}
+
+
 }
 /* (https://media.istockphoto.com/vectors/cannabis-vector-id483151619?b=1&k=20&m=483151619&s=170667a&w=0&h=2LNN6cy4NvfwmassnzQA8e8N1iMWt2_SxR_hJ3kg7XA= */
 body {

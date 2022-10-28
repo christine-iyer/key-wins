@@ -11,11 +11,11 @@ class Default extends React.Component {
                 </head>
                 <body className={this.props.pageClass}>
                 
-                    <nav>
-                        <a href="/wins">Go to Home Page For Log Entries</a>
-                        <a href="/wins/new">Create a New Log Entry</a>
-                        { win? <a href={`/wins/${win._id}/edit`}> {win.success} Edit Page </a> : ''}
-                        { win? <a href={`/wins/${win._id}`}>{win.success} Show Page</a> : ''}
+                    <nav className='nav'>
+                        <a href="/wins">Journal</a>
+                        <a href="/wins/new">New Entry</a>
+                        { win? <a href={`/wins/${win._id}/edit`}> Edit Page </a> : ''}
+                        { win? <a href={`/wins/${win._id}`}>Show Page</a> : ''}
                     </nav>
                     <h1>
                         {title}

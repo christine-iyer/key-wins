@@ -9,7 +9,8 @@ const winSchema = new mongoose.Schema({
      longTerm: Boolean, 
      gratitude: Boolean, 
      comments: { type: String, required: true }
-}, {timestamps: true}
+}, 
+{timestamps: true}
  );
 //Make a Model from the Schema
 //the Frut model allows us to use the CRUD Create Read Update Destroy in the app
