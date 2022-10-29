@@ -3,6 +3,11 @@ const Default = require('../layouts/Default.jsx')
 const checkTF = require('../../ulilities/randomization')
 const bee = new checkTF ();
 
+var emoji = require('node-emoji');
+const key = require('../../ulilities/emoji.js');
+
+
+
 class Index extends React.Component {
     render() {
         const { wins } = this.props
@@ -16,34 +21,18 @@ class Index extends React.Component {
                             return (
                                 <li key={_id}>
                                     <a href={`/wins/${_id}`}>
-                                        Key Win alert!!!  </a>
-                                    <p> I {success} on {createdAt.toLocaleDateString()} {createdAt.toLocaleTimeString()}.
-                                        <br />
+                                    🍭🍬🎉🎊🥳 </a>
+                                    <p> {createdAt.toLocaleDateString()} {createdAt.toLocaleTimeString()} <br />
+                                        I {success}.
                                         {firstWin ? bee.randomize(bee.firstWinYes): bee.randomize(bee.firstWinYes)}
-
-                                        {
-                                            longTerm
-                                                ? ' I\'ve been working towards this for ages; and it\'s sometimes been a struggle. ' : 'I must confess it was a relative quick win, but we count those. '
-                                        }
-
-                                        {
-                                            satisfaction
-                                                ? 'Am I satisfied? Are you kidding, I am so freaking proud. And yeah, I feel great. ' : 'How satisfied do I feel? Meh, no big deal.  '
-                                        }
-                                        {challenge
-                                                ? 'I don\'t always work this hard. But this win is different and it is really important to me. So I basically emptied the tank. ' : 'I\'ve done much harder things. But I don\'t take it for granted that most things come easy. '
-                                        }
-                                        {gratitude
-                                            ? 'I could never have done this alone and I want to thank each and every one of you. You know who you are! I love you. ' : 'Does anyone besides me deserve credit for this win ? Not today, went rogue and killed it alone! '
-                                        }
-                                        Should I delete this victory, even though it made me feel
-                                        {
-                                            satisfaction
-                                                ? ' super satisfied ' : ' pleased '
-                                        } ???
+                                        {longTerm ?  bee.randomize(bee.longtermYes): bee.randomize(bee.longtermNo) }
+                                        {satisfaction  ? bee.randomize(bee.satisfiedYes): bee.randomize(bee.satisfiedMeh)}
+                                        {challenge ? bee.randomize(bee.challengeYes): bee.randomize(bee.challengeMeh)}
+                                        {gratitude ? bee.randomize(bee.gratitudeYes): bee.randomize(bee.gratitudeMeh)}
+                                        
                                     </p>
                                     <form method="POST" action={`/wins/${_id}?_method=DELETE`}>
-                                        <input type="submit" value={`Delete it`} />
+                                        <input type="submit" value={`✂️ 🥇 `} />
                                     </form>
                                 </li>
                             )

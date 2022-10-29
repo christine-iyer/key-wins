@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Atma');
 
 nav {
-  font-size: 12px;
-  word-spacing: .1em;
+  font-size: 17px;
+  word-spacing: normal;
   list-style-image: url('starsolid.gif');
   margin: 5%;
   padding: 0; 
@@ -15,22 +15,25 @@ nav {
 }
 
 
-}
+
 /* (https://media.istockphoto.com/vectors/cannabis-vector-id483151619?b=1&k=20&m=483151619&s=170667a&w=0&h=2LNN6cy4NvfwmassnzQA8e8N1iMWt2_SxR_hJ3kg7XA= */
 body {
-  margin: 0;
-  font-family: 'Crimson', sans-serif;
-  background-color: antiquewhite;
-  background-size: cover;
-
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgb(245, 226, 226) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(245, 226, 226) 1px, transparent 1px);
 }
 
 .index {
-  /* font-family: 'Crimson', cursive; */
-  font-size: 19px;
+
+  font-size: 30px;
   /* Lined background */
-  background-image: linear-gradient(#d1d5db 1px, transparent 0px);
-  background-size: 100% 1.5em;
+  background-image:
+    linear-gradient(to right, rgb(245, 226, 226) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(245, 226, 226) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+  height: 1%;
 
   font-family: 'Atma';
   /*
@@ -38,6 +41,7 @@ body {
   The line height must be the same as the background size defined above
   */
   background-position-y: 1.5rem;
+  
 }
 
 
@@ -98,7 +102,11 @@ li a {
 
 input[type=text] {
   padding: .3em;
-  border: none;
+  border-style: inset;
+  width: 400px;
+  border-radius: 5px;
+  background-color:rgb(242, 233, 222) ;
+  height: 14px;
 }
 
 input[type=submit] {
@@ -114,8 +122,16 @@ input[type=submit] {
 
 }
 p {
-  color: rgb(173, 6, 6);
- font: url('');
+
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+
 }
 
 .title {

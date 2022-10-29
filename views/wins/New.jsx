@@ -5,6 +5,7 @@ class New extends React.Component {
     render(){
         return (
             <Default title="Share Your Key-Win with Us">
+                <h4>You don't have to win to have a key win.  Taking your best shot is a key win, even if you miss.</h4>
  
 
             <form method="POST" action="/wins">
@@ -17,7 +18,7 @@ class New extends React.Component {
                 <h3>In reflecting on this key-win, do you have any words to express what this could unlock for you? </h3>
                 comments: <input type="text" name="comments"></input><br />
                 {/* Date: <input type="date" name="Date"></input><br />  */}
-                <input type="submit" value="Submit your Key-Win"></input>
+                <input type="submit" value="Submit your Key-Win 🧟"></input>
             </form>
             </Default>
 
