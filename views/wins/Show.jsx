@@ -17,7 +17,7 @@ class Show extends React.Component {
 
         <Default title={` Certificate of Congratulations`} win={this.props.win}>
             <h2>Bring it!</h2>
-            <h3>On {createdAt.toLocaleDateString()} {createdAt.toLocaleTimeString()}</h3> 
+            <h3>On {createdAt.toLocaleDateString()}</h3> 
             <p> I {success}.
             {firstWin ? bee.randomize(bee.firstWinYes): bee.randomize(bee.firstWinYes)}
             {longTerm ?  bee.randomize(bee.longtermYes): bee.randomize(bee.longtermNo) }
