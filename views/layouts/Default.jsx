@@ -9,9 +9,7 @@ class Default extends React.Component {
                     <link rel="stylesheet" href="/css/app.css" />
                     <title>{title}</title>
                 </head>
-                <h1>
-                        {title}
-                    </h1>
+                
                 <body className={this.props.pageClass}>
                 
                     <nav className='nav'>
@@ -20,6 +18,9 @@ class Default extends React.Component {
                         { win? <a href={`/wins/${win._id}/edit`}> Edit Page </a> : ''}
                         { win? <a href={`/wins/${win._id}`}>Show Page</a> : ''}
                     </nav>
+                    <h1>
+                        {title}
+                    </h1>
                     
                     {this.props.children}
                 </body>

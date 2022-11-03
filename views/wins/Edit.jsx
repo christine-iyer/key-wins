@@ -1,12 +1,13 @@
 const React = require('react')
 const Default = require('../layouts/Default.jsx')
 const checkTF = require('../../ulilities/randomization')
+const tidy = require('../../ulilities/tidy')
 
 class Edit extends React.Component {
     render(){
         const {success, satisfaction, challenge, firstWin, longTerm,gratitude,comments,_id, Date} = this.props.win
         return (
-            <Default title={`${success} Edit Page`} win={this.props.win}>
+            <Default title={`${success} edit page`} win={this.props.win}>
                 <form method="POST" action={`/wins/${_id}?_method=PUT`}>
                     success: <input type="text" name="success" defaultValue={success}></input><br/>
                     satisfaction: <input type="checkbox" name="satisfaction" defaultChecked={satisfaction}/> <br />
@@ -14,10 +15,10 @@ class Edit extends React.Component {
                     firstWin: <input type="checkbox" name="firstWin" defaultChecked={firstWin}/> <br />
                     longTerm: <input type="checkbox" name="longTerm" defaultChecked={longTerm}/> <br />
                     gratitude: <input type="checkbox" name="gratitude" defaultChecked={gratitude}/> <br />
-                    comments: <input type="text" name="comments" defaultValue={comments}></input><br />
+                    comments: <input type="text" name="comments" defaultValue={comments.tidy}></input><br />
                     {/* Date: <input type="date" name="Date" defaultValue={Date}></input><br /> */}
                     
-                    <input type="submit" value="Edit Win" />
+                    <input type="submit" value="edit 🔑" />
                 </form>
             </Default>
         )

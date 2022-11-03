@@ -1,122 +1,175 @@
-/* @import url('https://fonts.googleapis.com/css?family=Lato:100&effect=neon');
-@import url('https://fonts.googleapis.com/css?family=Atma'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Roboto:wght@300&display=swap');
-* {
-  font-family: 'Fuzzy Bubbles', cursive;
-  font-family: 'Roboto', cursive;
+
+* {font-family: 'Sofia', cursive;
+  
+  
 }
+
 
 nav {
   margin-left: 35px;
   font-size: 16px;
   word-spacing: normal;
+  text-decoration: none;
 
   /* list-style-image: url('starsolid.gif'); */
 }
 .nav a {
   display: block;
+  text-decoration: none;
 }
-body {
+/* body {
   background-size: 15px 15px;
   background-image:
     linear-gradient(to right, rgba(245, 226, 226, .4) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(245, 226, 226, .4) 1px, transparent 1px);
+} */
+
+
+.show {
+  border: 100px solid transparent;
+  padding: 5px;
+  border-image: url('./images/key.png') 390 stretch;
+  background-repeat: calc(1);
+  /* background-image: url('./images/key.png');
+  background-repeat: repeat-x; */
+}
+.show .nav {
+  display: block;
+
+ 
+
+
+}
+.show h1 {
+  text-align: center;
+}
+.show h2 {
+  text-align: center;
+}
+.show h3 {
+  text-decoration: underline;
+  text-align: center;
+}
+.show body {
+  border-style: dotted;
 }
 
-.index {
-font-size: 30px;
-  background-image:
-    linear-gradient(to right, rgba(245, 226, 226, 0.4) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(245, 226, 226, 0.4) 1px, transparent 1px);
-background-size: 15px 15px;
-  height: 1%;
-  /* font-family: 'Atma'; */
-}
-.show {
-    color-scheme: rgb(187, 110, 110);
-    /* font-family: 'Atma'; */
-    font-size: 19px;
-}
 h2{
   text-align: center;
-
 }
 h1 {
-  font-family: 'Crimson', cursive;
-color: #b3c3da;
-
+  color: #6a329f;
   text-shadow: 1px 1px 1px rgb(225, 60, 60);
   padding: 5px 5px 5px 5px;
-
   text-align: left;
-
 }
 
 a {
   color: forestgreen;
-  text-decoration: none;
+
   text-shadow: 1px 1px 1px rgb(212, 164, 150);
   font-size: 1.5em;
   margin-left: -1em;
-  /* background: rgb(23, 48, 136); */
 }
-
 a:hover {
-    color:  rgb(212, 164, 150);
+    color:  #6a329f;
 }
-
 li {
   list-style: none;
-  color: rgb(212, 164, 150);
+  color: #6a329f;
   font-size: 22px;
-
 }
 
 li a {
-  color: rgb(212, 164, 150);
-
+  color: #6a329f;
 }
 
 input[type=text] {
-  border-style: inset;
-  width: 400px;
+  border-style: none;
+  width: 900px;
   border-radius: 5px;
-  background-color:rgb(242, 233, 222) ;
-  height: 14px;
+  background-color:#8fce00 ;
+  font-size: 32px;
+  height:52px;
+  margin-bottom: 5%;
 }
 
 input[type=submit] {
-  padding: .3em;
-  color: #4CAF50;
-  background: none;
-  font-size: 1em;
-  border-radius: 10%;
-  border: none;
-  border: 2px dotted #4CAF50;
-  
-  
+  /* padding: .2em; */
+  color: #8fce00;
+  background: #6a329f;
+  font-size: 50px;
+  border-radius: 15%;
+  border: 6px dotted #7f9d80;
+  float: right;
+  line-height: 45px;
+ 
 
+  /* margin-right: 15%; */
 }
+input[type=submit]:hover {
+  background-color: #8fce00;
+  height:52px;
+
+  
+}
+
+
+
 p {
 
-color: gray;
-
-  /* font-family: 'Dancing Script', cursive; */
   font-size: 21px;
   letter-spacing: 1px;
-  word-spacing: 5px;
-
-  margin-left: 35px;
+  word-spacing: normal;
+  padding-bottom: 0px;  
+margin-left: 30px;
   margin-right: 30px;
-
+  margin-bottom: 0%;
+  
 }
+
 
 p > a:hover {
   color: forestgreen;
 }
 
-/* .title {
- font: url('https://fonts.googleapis.com/css?family=Lato:100&effect=neon')
+
+body {
+  padding: 3%;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  width: 85%;
+
+  border: ridged blueviolet;
+  
+  /*#C3FFFA*/
+  background:
+    radial-gradient(rgba(212,241,250,.1) 30px, transparent 30px) -30px -30px,
+    radial-gradient(rgba(223, 160,196,.2) 30px, transparent -30px);
+  background-size: 60px 60px;
+  background-color: rgba(255, 250, 202,.1) 
+  
+
+}
+/* body {
+  background: 
+    radial-gradient(rgba(182,136,66,.6) 3px, transparent 4px),
+    radial-gradient(rgba(182,136,66,.6) 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px,   rgba(182,136,66,.6) 75px,   rgba(182,136,66,.6)  76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, rgba(182,136,66,.6) 76px, rgba(182,136,66,.6)  77px, transparent 78px, transparent 109px);
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 } */
+
+form {
+  font-size: 30px;
+  line-height: 40px;
+}
+.instructions {
+  text-align: left;
+}
+
+
 

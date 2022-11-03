@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
+const tidy = require('../ulilities/tidy');
 
 //Make a Schema
 const winSchema = new mongoose.Schema({
-     success: { type: String, required: true }, 
+     success: { type: String, required: true  }, 
      satisfaction: Boolean, 
      challenge: Boolean, 
      firstWin: Boolean,      
      longTerm: Boolean, 
      gratitude: Boolean, 
-     comments: { type: String, required: true }
+     comments: { type: String, required: false }
 }, 
 {timestamps: true}
  );
