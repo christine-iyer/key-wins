@@ -30,7 +30,7 @@ The finished product is a journal that's generated with minimal effort. And hope
 
 ### Key-Wins
 
-I am particularly pleased I was able to incorporate a bit of object oriented programming in there. I really struggled with it, syntactically, in the past. Especially because I was able to make the simple function work.
+I am particularly pleased I was able to incorporate a bit of object oriented programming in there. I really struggled with it, syntactically, in the past. Especially because I was able to make the simple function work. I would like to expand on data tidying functionality. 
 
 I am also happy that I was able to piece together many of the components I want for my own professional development. 
 
