@@ -8,17 +8,10 @@ class New extends React.Component {
 
             noun: your best shot is a key win, even if you miss.
 
-            verb: to create or change a habit. note: Remember, it takes an average of 66 🔑-🥇 to achieve mastery, so be patient with yourself.">
-                <h3>Logging a key win is simple.<br></br>
-                    <br></br>
-                </h3>
-
-
-
-
+            verb: chipping away at a new habit. (It takes an average of 66 🔑-🥇 to achieve mastery, so be patient).">
 
                 <form method="POST" action="/wins">
-                    <h3>The narrative will flow best if you describle your 🔑-🏆 in the past tense. (Don't bother using I, the most important pronoun, the app's got you).
+                    <h3>Tell me about  in the past tense. (Don't bother using I, the most important pronoun, the app's got you).
                     in the green space below describe your  using as few or as many details as you like.</h3>
                     <input type="text" name="success" placeholder='enter your response here' className='success-box'></input><br />
                     satisfaction: if the event was particularly rewarding, check here <input type="checkbox" className='one' name="satisfaction" placeholder='satisfaction'></input><br />
