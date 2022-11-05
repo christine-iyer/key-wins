@@ -28,13 +28,13 @@ The finished product is a journal that's generated with minimal effort. And hope
 **Trello**
 ![](/public/css/images/Trello.png)
 
-### + aspects
+### Key-Wins
 
 I am particularly pleased I was able to incorporate a bit of object oriented programming in there. I really struggled with it, syntactically, in the past. Especially because I was able to make the simple function work.
 
 I am also happy that I was able to piece together many of the components I want for my own professional development. 
 
-### -s
+### Ongoing Challenges
 
 I'd really like to explore the form functionalities and customization properties. 
 
