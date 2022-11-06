@@ -25,7 +25,9 @@ app.set('view engine', 'jsx') // register the jsx view engine
 
 app.use(methodOverride('_method'))
 app.use(express.static('public'))
+
 app.use('/wins', require('./controllers/routeController'))
+
 /* END Middleware */
 
 // Mount Routes

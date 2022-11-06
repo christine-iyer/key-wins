@@ -28,7 +28,7 @@ class New extends React.Component {
                 <br />
                 <br />
                
-                
+                <a href='https://www.businessinsider.com/a-day-in-the-life-of-hsbc-executive-melania-edwards-2018-10'>On the evenings that we stay in Palo Alto, we walk down the tree-lined University Avenue, reflecting upon our key wins and challenges and preparing for the adventures of the next day</a><br></br>
                 <a href='https://www.healthline.com/health/how-long-does-it-take-to-form-a-habit#:~:text=It%20can%20take%20anywhere%20from,new%20behavior%20to%20become%20automatic.'>66 Source</a>
             </Default>
 
