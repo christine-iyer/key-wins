@@ -33,12 +33,12 @@ app.use('/wins', require('./controllers/routeController'))
 // Mount Routes
 
 
-app.listen(process.env.PORT || 3000, () => {
-     console.log('Listening on Port 3000')
- })
+// app.listen(process.env.PORT || 3000, () => {
+//      console.log('Listening on Port 3000')
+//  })
 
 
 // at the bottom
 app.listen(PORT, () => {
   console.log('We in the building', PORT)
-})
+}) 
